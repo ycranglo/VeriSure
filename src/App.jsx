@@ -193,7 +193,7 @@ const handleFormSubmitEnc = (e) => {
   </section> 
   <div>
     <div className=' container mx-auto flex px-5 pt-[1rem] items-center justify-center flex-col'>
-      <h1 className="mb-8 text-[#f2f8fd] sm:text-2xl text-[.8rem] font-[Montserrat] leading-relaxed">ENCRYPT HERE:</h1>
+      <h1 className="mb-3 text-[#f2f8fd] sm:text-2xl text-[.8rem] font-[Montserrat] leading-relaxed">ENCRYPT HERE:</h1>
       <section className="flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 md:flex-row md:h-48">
     <div className="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700 md:dark:bg-gray-800">
         <div className="px-6 py-6 md:px-8 md:py-0">
@@ -218,7 +218,7 @@ const handleFormSubmitEnc = (e) => {
         </div>
         <div>
     <div className=' container mx-auto flex px-5 pt-[4rem] items-center justify-center flex-col pb-[5rem]'>
-      <h1 className="mb-8 text-[#f2f8fd] sm:text-2xl text-[.8rem] font-[Montserrat] leading-relaxed">DECRYPT HERE:</h1>
+      <h1 className="mb-3 text-[#f2f8fd] sm:text-2xl text-[.8rem] font-[Montserrat] leading-relaxed">DECRYPT HERE:</h1>
       <section className="flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 md:flex-row md:h-48">
     <div className="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700 md:dark:bg-gray-800">
         <div className="px-6 py-6 md:px-8 md:py-0">
