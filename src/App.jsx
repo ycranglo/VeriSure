@@ -162,7 +162,7 @@ console.log(messHashObj)
 
 const handleFormSubmitEnc = (e) => {
   e.preventDefault();
-  let charEnc = Encmessage.toLowerCase.split('');
+  let charEnc = Encmessage.toLowerCase().split('');
   for (let i = 0; i < charEnc.length; i++) {
     for (let k = 0; k < messHashObj.length; k++) {
       if (charEnc[i] === messHashObj[k].encrypt) {
@@ -179,7 +179,7 @@ const handleFormSubmitEnc = (e) => {
   
   const handleFormSubmitDec = (e) => {
   e.preventDefault();
-  let charDenc = Dencmessage.toLowerCase.split('');
+  let charDenc = Dencmessage.toLowerCase().split('');
   for (let i = 0; i < charDenc.length; i++) {
     for (let k = 0; k < messHashObj.length; k++) {
       if (charDenc[i] === messHashObj[k].decrypt) {
