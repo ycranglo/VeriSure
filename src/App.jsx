@@ -162,7 +162,7 @@ console.log(messHashObj)
 
 const handleFormSubmitEnc = (e) => {
   e.preventDefault();
-  let charEnc = Encmessage.split('');
+  let charEnc = Encmessage.toLowerCase.split('');
   for (let i = 0; i < charEnc.length; i++) {
     for (let k = 0; k < messHashObj.length; k++) {
       if (charEnc[i] === messHashObj[k].encrypt) {
@@ -179,7 +179,7 @@ const handleFormSubmitEnc = (e) => {
   
   const handleFormSubmitDec = (e) => {
   e.preventDefault();
-  let charDenc = Dencmessage.split('');
+  let charDenc = Dencmessage.toLowerCase.split('');
   for (let i = 0; i < charDenc.length; i++) {
     for (let k = 0; k < messHashObj.length; k++) {
       if (charDenc[i] === messHashObj[k].decrypt) {
@@ -213,7 +213,7 @@ const handleFormSubmitEnc = (e) => {
       <div className="text-center lg:w-2/3 w-full ">
         <h1 className="text-[#d97c30] font-[Montserrat] title-font sm:text-9xl text-6xl mb-4 black">VERI<span className='text-[#213409]'>SURE</span></h1>
               <p className=" text-[#f2f8fd] sm:text-2xl text-[.8rem] font-[Montserrat] leading-relaxed">ENCRYPT,DECRYPT YOUR MESSAGE!</p>
-               <p className=" text-[#f2f8fd] font-[Poppins] font-light leading-relaxed">from a-z,0-9</p>
+              <p className=" text-[#f2f8fd] font-[Poppins] font-light leading-relaxed">from a-z,0-9</p>
         
       </div>
     </div>
