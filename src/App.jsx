@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { useEffect, useState } from 'react';
 import './App.css'
 
@@ -14,6 +14,10 @@ function App() {
 
 
   const messHashObj = [
+    {
+      encrypt: ' ',
+      decrypt: '}'
+    },
     {
       encrypt: 'a',
       decrypt: '1'
@@ -244,7 +248,7 @@ const handleFormSubmitEnc = (e) => {
     </div>
         </div>
         <div>
-    <div className=' container mx-auto flex px-5 pt-[4rem] items-center justify-center flex-col pb-[5rem]'>
+    <div className=' container mx-auto flex px-5 pt-[4rem] items-center justify-center flex-col '>
       <h1 className="mb-3 text-[#f2f8fd] sm:text-2xl text-[.8rem] font-[Montserrat] leading-relaxed">DECRYPT HERE:</h1>
       <section className="flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 md:flex-row md:h-48">
     <div className="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700 md:dark:bg-gray-800">
@@ -270,6 +274,40 @@ const handleFormSubmitEnc = (e) => {
             
     </div>
   </div>
+    
+        <div className='flex justify-center  rounded-md py-[5rem]'>
+          <div className="relative overflow-x-auto">
+    <table className="w-[80vw] text-sm text-center rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" className="px-6 py-3 text-[#f2f8fd]  font-[Montserrat]">
+                    ENCRYPT
+                </th>
+                <th scope="col" className="px-6 py-3 text-[#f2f8fd]  font-[Montserrat]">
+                    DECRYPT
+                </th>
+            </tr>
+        </thead>
+       <tbody>
+    {messHashObj.map((item, index) => (
+        <tr key={index} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                {item.encrypt}
+            </th>
+            <td className="px-6 py-4 ">
+                {item.decrypt}
+            </td>
+        </tr>
+    ))}
+</tbody>
+    </table>
+</div>
+
+  </div>
+
+
+
+
 </div>
     </>
   )
