@@ -128,39 +128,39 @@ function App() {
     },
     {
       encrypt: '2',
-      decrypt: '😎'
+      decrypt: '€'
     },
     {
       encrypt: '3',
-      decrypt: '😭'
+      decrypt: 'ㄴ'
     },
     {
       encrypt: '4',
-      decrypt: '😳'
+      decrypt: 'ㅆ'
     },
     {
       encrypt: '5',
-      decrypt: '😡'
+      decrypt: 'ㅍ'
     },
     {
       encrypt: '6',
-      decrypt: '👀'
+      decrypt: 'ㅎ'
     },
     {
       encrypt: '7',
-      decrypt: '💩'
+      decrypt: 'ㅋ'
     },
     {
       encrypt: '8',
-      decrypt: '🤮'
+      decrypt: 'ㄹ'
     },
     {
       encrypt: '9',
-      decrypt: '👍'
+      decrypt: 'ㄷ'
     },
     {
       encrypt: '0',
-      decrypt: '🤡'
+      decrypt: 'ㄱ'
     },
   ]
 
