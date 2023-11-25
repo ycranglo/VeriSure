@@ -158,6 +158,10 @@ function App() {
       encrypt: '9',
       decrypt: '🫶'
     },
+    {
+      encrypt: '0',
+      decrypt: ')'
+    },
   ]
 
 console.log(messHashObj)
