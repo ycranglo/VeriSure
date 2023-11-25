@@ -16,111 +16,111 @@ function App() {
   const messHashObj = [
     {
       encrypt: ' ',
-      decrypt: '}'
-    },
-    {
-      encrypt: 'a',
-      decrypt: '1'
-    },
-    {
-      encrypt: 'b',
-      decrypt: '0'
-    },
-      {
-      encrypt: 'c',
-      decrypt: '2'
-    },
-    {
-      encrypt: 'd',
-      decrypt: '9'
-    },
-    {
-      encrypt: 'e',
-      decrypt: '3'
-    },
-    {
-      encrypt: 'f',
-      decrypt: '8'
-    },
-    {
-      encrypt: 'g',
-      decrypt: '4'
-    },
-    {
-      encrypt: 'h',
-      decrypt: '7'
-    },
-    {
-      encrypt: 'i',
-      decrypt: '5'
-    },
-    {
-      encrypt: 'j',
-      decrypt: '6'
-    },
-    {
-      encrypt: 'k',
-      decrypt: 'a'
-    },
-    {
-      encrypt: 'l',
-      decrypt: 's'
-    },
-    {
-      encrypt: 'm',
-      decrypt: 'd'
-    },
-    {
-      encrypt: 'n',
-      decrypt: 'f'
-    },
-    {
-      encrypt: 'o',
-      decrypt: 'g'
-    },
-    {
-      encrypt: 'p',
-      decrypt: 'h'
-    },
-    {
-      encrypt: 'q',
-      decrypt: 'j'
-    },
-    {
-      encrypt: 'r',
-      decrypt: 'k'
-    },
-    {
-      encrypt: 's',
-      decrypt: 'l'
-    },
-    {
-      encrypt: 't',
-      decrypt: 'z'
-    },
-    {
-      encrypt: 'u',
-      decrypt: 'x'
-    },
-    {
-      encrypt: 'v',
-      decrypt: 'c'
-    },
-    {
-      encrypt: 'w',
       decrypt: '!'
     },
     {
-      encrypt: 'x',
-      decrypt: '#'
+      encrypt: 'a',
+      decrypt: '@'
     },
     {
-      encrypt: 'y',
+      encrypt: 'b',
+      decrypt: '#'
+    },
+      {
+      encrypt: 'c',
       decrypt: '$'
     },
     {
-      encrypt: 'z',
+      encrypt: 'd',
+      decrypt: '%'
+    },
+    {
+      encrypt: 'e',
+      decrypt: '^'
+    },
+    {
+      encrypt: 'f',
       decrypt: '&'
+    },
+    {
+      encrypt: 'g',
+      decrypt: '*'
+    },
+    {
+      encrypt: 'h',
+      decrypt: '('
+    },
+    {
+      encrypt: 'i',
+      decrypt: ')'
+    },
+    {
+      encrypt: 'j',
+      decrypt: '-'
+    },
+    {
+      encrypt: 'k',
+      decrypt: '='
+    },
+    {
+      encrypt: 'l',
+      decrypt: '_'
+    },
+    {
+      encrypt: 'm',
+      decrypt: '+'
+    },
+    {
+      encrypt: 'n',
+      decrypt: '['
+    },
+    {
+      encrypt: 'o',
+      decrypt: ']'
+    },
+    {
+      encrypt: 'p',
+      decrypt: '{'
+    },
+    {
+      encrypt: 'q',
+      decrypt: '}'
+    },
+    {
+      encrypt: 'r',
+      decrypt: '|'
+    },
+    {
+      encrypt: 's',
+      decrypt: ';'
+    },
+    {
+      encrypt: 't',
+      decrypt: ':'
+    },
+    {
+      encrypt: 'u',
+      decrypt: '"'
+    },
+    {
+      encrypt: 'v',
+      decrypt: ','
+    },
+    {
+      encrypt: 'w',
+      decrypt: '<'
+    },
+    {
+      encrypt: 'x',
+      decrypt: '.'
+    },
+    {
+      encrypt: 'y',
+      decrypt: '>'
+    },
+    {
+      encrypt: 'z',
+      decrypt: '/'
     },
     {
       encrypt: '1',
@@ -293,7 +293,8 @@ const handleFormSubmitEnc = (e) => {
             </tr>
         </thead>
        <tbody>
-    {messHashObj.map((item, index) => (
+                {messHashObj.map((item, index) => (
+     
         <tr key={index} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                 {item.encrypt}
