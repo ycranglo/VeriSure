@@ -132,15 +132,15 @@ function App() {
     },
     {
       encrypt: '3',
-      decrypt: 'ㄴ'
+      decrypt: '©'
     },
     {
       encrypt: '4',
-      decrypt: 'ㅆ'
+      decrypt: '®'
     },
     {
       encrypt: '5',
-      decrypt: 'ㅍ'
+      decrypt: '~'
     },
     {
       encrypt: '6',
