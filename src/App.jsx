@@ -15,10 +15,6 @@ function App() {
 
   const messHashObj = [
     {
-      encrypt: ' ',
-      decrypt: '!'
-    },
-    {
       encrypt: 'a',
       decrypt: '@'
     },
@@ -219,7 +215,7 @@ const handleFormSubmitEnc = (e) => {
   <section className="text-gray-600 body-font">
     <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
       <div className="text-center lg:w-2/3 w-full ">
-        <h1 className="text-[#d97c30] font-[Montserrat] title-font sm:text-9xl text-6xl mb-4 black">VERI<span className='text-[#213409]'>SURE</span></h1>
+        <h1 className="text-[#d97c30] font-[Montserrat] title-font sm:text-9xl text-6xl mb-4 black">VERI<span className='text-[#A8DF8E]'>SURE</span></h1>
               <a href="https://github.com/Angelo-misuhara/VeriSure" target='_blank' rel='noreferrer'>
                 <p className=" text-[#f2f8fd] sm:text-2xl text-[.8rem] font-[Montserrat] leading-relaxed">ENCRYPT,DECRYPT YOUR MESSAGE!</p>
               </a>
