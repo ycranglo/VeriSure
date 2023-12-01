@@ -148,7 +148,7 @@ function App() {
     },
     {
       encrypt: '8',
-      decrypt: '¦'
+      decrypt: 'ㄹ'
     },
     {
       encrypt: '9',
@@ -156,7 +156,7 @@ function App() {
     },
     {
       encrypt: '0',
-      decrypt: '…'
+      decrypt: 'ㄱ'
     },
   ]
 
@@ -232,7 +232,7 @@ const handleFormSubmitEnc = (e) => {
         <div className="px-6 py-6 md:px-8 md:py-0">
             <h2 className="text-lg font-bold text-gray-700 dark:text-white md:text-gray-100 font-[Montserrat]">ENCRYPTED MESSAGE:</h2>
 
-                  <p className="break-all mt-2 text-sm text-gray-600 dark:text-gray-400 md:text-gray-400">{enc }</p>
+                <p className="break-all mt-2 text-sm text-gray-600 dark:text-gray-400 md:text-gray-400">{enc }</p>               
         </div>
     </div>
 
@@ -288,9 +288,9 @@ const handleFormSubmitEnc = (e) => {
                 </th>
             </tr>
         </thead>
-       <tbody>
+      <tbody>
                 {messHashObj.map((item, index) => (
-     
+    
         <tr key={index} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                 {item.encrypt}
