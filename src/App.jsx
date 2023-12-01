@@ -238,7 +238,7 @@ const handleFormSubmitEnc = (e) => {
 
     <div className="flex items-center justify-center pb-6 md:py-0 md:w-1/2 lg:mr-11">
         <form onSubmit={handleFormSubmitEnc}>
-            <div className="flex flex-col p-1.5 overflow-hidden border rounded-lg dark:border-gray-600 lg:flex-row dark:focus-within:border-blue-300 focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
+            <div className="flex flex-col p-1.5 overflow-hidden border rounded-lg border-gray-600 lg:flex-row dark:focus-within:border-blue-300 focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
                 <input className="px-6 py-2 text-[#010409] placeholder-[#010409]   outline-none bg-[#F7F7F7]  focus:placeholder-transparent "   onChange={(e) => setEncMessage(e.target.value)}  value={Encmessage} type="text" name="text" placeholder="Enter your message" aria-label="Enter your email"/>
 
                 <button className="px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:bg-gray-600 focus:outline-none">Encrypt</button>
@@ -263,7 +263,7 @@ const handleFormSubmitEnc = (e) => {
 
     <div className="flex items-center justify-center pb-6 md:py-0 md:w-1/2 lg:mr-11">
         <form onSubmit={handleFormSubmitDec}>
-            <div className="flex flex-col p-1.5 overflow-hidden border rounded-lg dark:border-gray-600 lg:flex-row dark:focus-within:border-blue-300 focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
+            <div className="flex flex-col p-1.5 overflow-hidden border rounded-lg border-gray-600 lg:flex-row dark:focus-within:border-blue-300 focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
                 <input className="px-6 py-2 text-[#010409] placeholder-[#010409]   outline-none bg-[#F7F7F7]  focus:placeholder-transparent "   onChange={(e) => setDencMessage(e.target.value)}  value={Dencmessage} type="text" name="text" placeholder="Enter your message" aria-label="Enter your email"/>
 
                 <button className="px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:bg-gray-600 focus:outline-none">Encrypt</button>
