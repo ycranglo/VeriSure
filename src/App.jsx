@@ -227,19 +227,19 @@ const handleFormSubmitEnc = (e) => {
   <div>
     <div className=' container mx-auto flex px-5 pt-[1rem] items-center justify-center flex-col'>
       <h1 className="mb-3 text-[#f2f8fd] sm:text-2xl text-[.8rem] font-[Montserrat] leading-relaxed">ENCRYPT HERE:</h1>
-      <section className="flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 md:flex-row md:h-48">
-    <div className="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700 md:dark:bg-gray-800">
+      <section className="flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-lg bg-gray-800 md:flex-row md:h-48">
+    <div className="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700 md:bg-gray-800">
         <div className="px-6 py-6 md:px-8 md:py-0">
-            <h2 className="text-lg font-bold text-gray-700 dark:text-white md:text-gray-100 font-[Montserrat]">ENCRYPTED MESSAGE:</h2>
+            <h2 className="text-lg font-bold text-gray-700 text-white md:text-gray-100 font-[Montserrat]">ENCRYPTED MESSAGE:</h2>
 
-                <p className="break-all mt-2 text-sm text-gray-600 dark:text-gray-400 md:text-gray-400">{enc }</p>               
+                <p className="break-all mt-2 text-sm text-gray-600 text-gray-400 md:text-gray-400">{enc }</p>               
         </div>
     </div>
 
     <div className="flex items-center justify-center pb-6 md:py-0 md:w-1/2 lg:mr-11">
         <form onSubmit={handleFormSubmitEnc}>
-            <div className="flex flex-col p-1.5 overflow-hidden border rounded-lg dark:border-gray-600 lg:flex-row dark:focus-within:border-blue-300 focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
-                <input className="px-6 py-2 text-[#f2f8fd] placeholder-gray-500 bg-white outline-none dark:bg-gray-800 dark:placeholder-gray-400 focus:placeholder-transparent dark:focus:placeholder-transparent"   onChange={(e) => setEncMessage(e.target.value)}  value={Encmessage} type="text" name="text" placeholder="Enter your message" aria-label="Enter your email"/>
+            <div className="flex flex-col p-1.5 overflow-hidden border rounded-lg border-gray-600 lg:flex-row focus-within:border-blue-300 focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
+                <input className="px-6 py-2 text-[#f2f8fd] placeholder-gray-500 bg-white outline-none bg-gray-800 placeholder-gray-400 focus:placeholder-transparent focus:placeholder-transparent"   onChange={(e) => setEncMessage(e.target.value)}  value={Encmessage} type="text" name="text" placeholder="Enter your message" aria-label="Enter your email"/>
 
                 <button className="px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:bg-gray-600 focus:outline-none">Encrypt</button>
             </div>
@@ -252,21 +252,21 @@ const handleFormSubmitEnc = (e) => {
     <div>
     <div className=' container mx-auto flex px-5 pt-[5rem] items-center justify-center flex-col'>
       <h1 className="mb-3 text-[#f2f8fd] sm:text-2xl text-[.8rem] font-[Montserrat] leading-relaxed">DECRYPT HERE:</h1>
-      <section className="flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 md:flex-row md:h-48">
-    <div className="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700 md:dark:bg-gray-800">
+      <section className="flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-lg bg-gray-800 md:flex-row md:h-48">
+    <div className="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700 md:bg-gray-800">
         <div className="px-6 py-6 md:px-8 md:py-0">
-            <h2 className="text-lg font-bold text-gray-700 dark:text-white md:text-gray-100 font-[Montserrat]">ENCRYPTED MESSAGE:</h2>
+            <h2 className="text-lg font-bold text-gray-700 text-white md:text-gray-100 font-[Montserrat]">DECRYPTED MESSAGE:</h2>
 
-                  <p className="break-all mt-2 text-sm text-gray-600 dark:text-gray-400 md:text-gray-400">{dec }</p>
+                  <p className="break-all mt-2 text-sm text-gray-600 text-gray-400 md:text-gray-400">{dec }</p>
         </div>
     </div>
 
     <div className="flex items-center justify-center pb-6 md:py-0 md:w-1/2 lg:mr-11">
         <form onSubmit={handleFormSubmitDec}>
-            <div className="flex flex-col p-1.5 overflow-hidden border rounded-lg dark:border-gray-600 lg:flex-row dark:focus-within:border-blue-300 focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
-                <input className="px-6 py-2 text-[#f2f8fd] placeholder-gray-500 bg-white outline-none dark:bg-gray-800 dark:placeholder-gray-400 focus:placeholder-transparent dark:focus:placeholder-transparent"   onChange={(e) => setDencMessage(e.target.value)}  value={Dencmessage} type="text" name="text" placeholder="Enter your message" aria-label="Enter your email"/>
+            <div className="flex flex-col p-1.5 overflow-hidden border rounded-lg border-gray-600 lg:flex-row focus-within:border-blue-300 focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
+                <input className="px-6 py-2 text-[#f2f8fd] placeholder-gray-500 bg-white outline-none bg-gray-800 placeholder-gray-400 focus:placeholder-transparent focus:placeholder-transparent"   onChange={(e) => setDencMessage(e.target.value)}  value={Dencmessage} type="text" name="text" placeholder="Enter your message" aria-label="Enter your email"/>
 
-                <button className="px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:bg-gray-600 focus:outline-none">Encrypt</button>
+                <button className="px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:bg-gray-600 focus:outline-none">Decrypt</button>
             </div>
                 </form>
     </div>
@@ -277,8 +277,8 @@ const handleFormSubmitEnc = (e) => {
     
         <div className='flex justify-center  rounded-md py-[5rem]'>
           <div className="relative overflow-x-auto">
-    <table className="w-[80vw] text-sm text-center rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    <table className="w-[80vw] text-sm text-center rtl:text-right text-gray-500 text-gray-400">
+        <thead className="text-xs text-gray-700 uppercase bg-[#1F2937] bg-gray-700 text-gray-400">
             <tr>
                 <th scope="col" className="px-6 py-3 text-[#f2f8fd]  font-[Montserrat]">
                     DECRYPT
@@ -291,8 +291,8 @@ const handleFormSubmitEnc = (e) => {
       <tbody>
                 {messHashObj.map((item, index) => (
     
-        <tr key={index} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+        <tr key={index} className="bg-[#1F2937] border-b bg-gray-800 border-gray-700">
+            <th scope="row" className="px-6 py-4 font-medium text-[#F1FFFF] whitespace-nowrap text-white">
                 {item.encrypt}
             </th>
             <td className="px-6 py-4 ">
